@@ -15,9 +15,8 @@ public class CarMapper {
 
         CarDTO dto = new CarDTO();
         dto.setId(entity.getId());
-        dto.setModelo(entity.getModelo());
-        dto.setMarca(entity.getMarca());
-        dto.setAno(entity.getAno());
+        dto.setBrand(entity.getBrand());
+        dto.setName(entity.getName());
         return dto;
     }
 
@@ -26,9 +25,8 @@ public class CarMapper {
 
         CarEntity entity = new CarEntity();
         entity.setId(dto.getId());
-        entity.setModelo(dto.getModelo());
-        entity.setMarca(dto.getMarca());
-        entity.setAno(dto.getAno());
+        entity.setBrand(dto.getBrand());
+        entity.setName(dto.getName());
         return entity;
     }
 
